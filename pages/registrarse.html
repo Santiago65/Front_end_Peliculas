@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--titulo-->
+    <title>Registrarse </title>
+    <!--aos-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--favicon-->
+    <link rel="icon" type="image/png" href="../assets/img/claqanim.png">
+    <!--animate-->
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!--css-->
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="body-login">
+  <header class="animate__animated animate__shakeX header-login" >
+    <a  href="../index.html">
+      <img src="../assets/iconos/clapperboard-solid (1).svg" alt="Logo Codomovies" width="20" loading="lazy">
+      <span class="span-icon">CAC-Movies</span>
+    </a> 
+  </header>
+<!--inicio de la seccion principal de la web-->
+  <main class="main-login" >
+   
+    <h1 class="title-login"> Registrarme</h1>
+    <form id="formRegistro" class="form-login" action="validar.php" method="get">
+
+      <div>
+        <input  class="input-login" type="text" name="NOMBRE" id="nombre" placeholder="NOMBRE"required>
+      </div> 
+      <div>
+        <input class="input-login" type="text"name="APELLIDO" id="apellido" placeholder="APELLIDO"required>
+      </div>
+      <div>
+        <input class="input-login" type="email" name="EMAIL" id="email" placeholder="EMAIL"required>
+      </div> 
+      <div>
+        <input class="input-login" type="password" name="password" id="password" placeholder="CONTRASEÑA"required>
+      </div>
+      <div>
+        <input class="input-date" type="date" name="date" id="date"required>
+      </div>
+      <div >
+        <select class="select-pais" name="Ingrese Pais" id="pais"required>
+          <option value="">País :</option>
+          <option value="Argentina">Argentina</option>
+          <option value="brasil">Bolivia</option>
+          <option value="brasil">Brasil</option>
+          <option value="colombia">Colombia</option>
+          <option value="ecuador">Ecuador</option>
+          <option value="brasil">El Salvador</option>
+          <option value="paraguay">Paraguay</option>
+          <option value="peru">Peru</option>
+          <option value="brasil">República Dominicana</option>
+          <option value="uruguay">Uruguay</option>
+          <option value="venezuela">Venezuela</option>
+        </select>
+  
+      </div>
+      <div class="label-checkbox">
+         <label  for="checkbox" >
+         <input type="checkbox" name="Términos" id="checkbox"required>
+           Acepto Términos y Condiciones
+         </label>
+      </div>
+      <div >
+          <input id="registrarme" class="input-registrarme" type="submit" value="Registrarme">
+      </div>
+      <div>
+        <a class="ancla-registro-login" href="#">¿Necesitas ayuda?</a>
+      </div>
+    </form>
+      <div id="error"></div>
+  </main>
+<!--fin de la seccion principal de la web-->
+<script src="../js/formRegister.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+</body>
+</html>

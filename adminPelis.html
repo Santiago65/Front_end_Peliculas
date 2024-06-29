@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador de Películas</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../assets/img/claqanim.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <ul class="list-nav">
+                <li class="animate__animated animate__wobble animate__repeat-2	2 icono-peliculas list-item-anclas">  
+                    <a href="index.html">
+                        <img src="./assets/iconos/clapperboard-solid (1).svg" width="17px" alt="icono de codomovies" loading="lazy">
+                        <span>CAC-Movies</span>
+                    </a>
+                </li>
+                <li class="list-item-anclas"><a href="#tendencias">Tendencias</a></li>
+                <li class="list-item-anclas"><a href="./registrarse.html" target="_blank">Registrarse</a></li>
+                <li class="list-item-anclas"><a href="./login.html" target="_blank">Iniciar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 class="title-login">Administrador de Películas</h1>
+        <section class="formulario-gestor-de-peliculas">
+            <form id="formulario-gestor" enctype="multipart/form-data">
+                <div class="container-gestor">
+                    <input class="input-gestor" type="text" name="titulo" placeholder="Título:">
+                    <input class="input-gestor" type="text" name="genero" placeholder="Género:">
+                </div> 
+                <div class="container-gestor">
+                    <input class="input-gestor" type="text" name="duracion" placeholder="Duración:">
+                </div>  
+                <div class="container-textarea">
+                    <textarea class="textarea" name="sinopsis" placeholder="Sinopsis:"></textarea>
+                </div>
+                <div class="container-gestor" id="file">
+                    <input class="input-gestor" type="file" name="imagen">
+                </div>
+                <div>
+                    <input class="input-submit" type="submit" value="Agregar Películas">
+                </div>   
+            </form>
+        </section>
+        <hr>
+        <section>
+            <h2>Listado de Películas</h2>
+            <p class="listado-de-pelis">Para ver todos los datos de las películas, elija una y toque modificar.</p>
+        </section>
+        <section>
+            <table class="tabla-modificadora">
+                <!-- <thead>
+                    <tr>
+                        <th>Título</th>
+                        <th>Género</th>
+                        <th>Imagen</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead> -->
+                <tbody id="peliculas-lista">
+                    <!-- Las filas de películas se generarán aquí con JavaScript -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer class="footer">
+        <nav class="nav-footer">
+            <ul class="list-footer">
+                <li class="list-item-anclas"><a href="#">Términos y Condiciones</a></li>
+                <li class="list-item-anclas"><a href="#">Preguntas Frecuentes</a></li>
+                <li class="list-item-anclas"><a href="#">Ayuda</a></li>
+                <li class="list-item-anclas"><a href="adminPelis.html">Administrador de Películas</a></li>
+                <li>
+                    <a class="icono-arrow-up" href="index.html">
+                        <img src="./assets/iconos/iconizer-ei--arrow-up.svg" alt="flecha hacia arriba" width="60px" />
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+    <script src="./js/validation.js"></script>
+    <script src="./js/formadminPelis.js"></script>
+    <script src="./js/formadmin.js"></script>
+    <script src="./js/editarPeli.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
