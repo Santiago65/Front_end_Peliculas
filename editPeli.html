@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Película</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <ul class="list-nav">
+                <li class="icono-peliculas list-item-anclas">
+                    <a href="index.html">
+                        <img src="./assets/iconos/clapperboard-solid (1).svg" width="17px" alt="icono de codomovies" loading="lazy">
+                        <span>CAC-Movies</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-editar-pelicula">
+        <h1>Editar Película</h1>
+        <form id="editar-formulario">
+            <input type="hidden" name="id" id="id">
+            <div>
+                <label for="titulo"><h4>Título:</h4></label>
+                <input type="text" name="titulo" id="titulo" required>
+            </div>
+            <br>
+            <div>
+                <label for="genero"><h4>Género:</h4></label>
+                <input type="text" name="genero" id="genero" required>
+            </div>
+            <br>
+            <div>
+                <label for="duracion"><h4>Duración:</h4></label>
+                <input type="text" name="duracion" id="duracion" required>
+            </div>
+            <br>
+            <div>
+                <label for="sinopsis"><h4>Sinopsis:</h4></label>
+                <textarea name="sinopsis" id="sinopsis" required></textarea>
+            </div>
+            <br>
+            <div>
+                <label for="imagen"><h4>Imagen:</h4></label>
+                <input type="file" name="imagen" id="imagen">
+            </div>
+            
+            <button type="submit"><h4>Guardar cambios</h4></button>
+        </form>
+    </main>
+    <footer class="footer">
+        <nav class="nav-footer">
+            <ul class="list-footer">
+                <li class="list-item-anclas"><a href="#">Términos y Condiciones</a></li>
+                <li class="list-item-anclas"><a href="#">Preguntas Frecuentes</a></li>
+                <li class="list-item-anclas"><a href="#">Ayuda</a></li>
+                <li class="list-item-anclas"><a href="adminPelis.html">Administrador de Películas</a></li>
+                <li>
+                    <a class="icono-arrow-up" href="index.html">
+                        <img src="./assets/iconos/iconizer-ei--arrow-up.svg" alt="flecha hacia arriba" width="60px" />
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+    <script src="./js/editarPeli.js"></script>
+</body>
+</html>

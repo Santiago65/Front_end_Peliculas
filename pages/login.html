@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--titulo-->
+    <title>Inicio de Sesion</title>
+    <!--favicon-->
+    <link rel="icon" type="image/png" href="../assets/img/claqanim.png">
+    <!--aos-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--animate-->
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!--css-->
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="body-login">
+    <!--inicio de header-->
+ <header class="animate__animated animate__shakeX header-login" >
+     <a  href="/">
+            <img src="../assets/iconos/clapperboard-solid (1).svg" alt="Logo Codomovies" width="20" loading="lazy">
+            <span class="span-icon">CAC-Movies</span>
+      </a> 
+    
+ </header>
+    <!--fin de header-->
+    <!--inicio de la seccion principal -->
+    <main data-aos="flip-right"data-aos-easing="linear"
+    data-aos-duration="1500" class="main-login">
+     <h1 class="title-login">Iniciar Sesión</h1>
+     <form id="formulario" class="form-login" action="validar,php" method="get" >
+      <div >
+        <input  id="usuario" class="input-login" type="usuario" name="usuario" placeholder="Usuario">
+
+      </div>
+      
+      <div >
+        <input  id="email"  class="input-login"placeholder="Email">
+      </div>
+      <div >
+        <input id="contraseña" class="input-login" type="password" name="contraseña"  placeholder="Contraseña">
+      </div> 
+   
+      <div >
+        <input id="iniciarSesion" class="input-submit" type="submit" value="Iniciar sesion">
+       
+      </div>
+      <div>
+        <a class="ancla-registro-login" href="../pages/registrarse.html">Registrarse</a>
+      </div>
+     
+     </form>
+     <div id="error"></div>
+
+    </main>
+    <!--fin de la seccion principal-->
+    <!--inicio de footer-->
+    <footer></footer>
+    <!--fin de footer-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      
+      AOS.init();
+    </script>
+    <script src="../js/formLogin.js"></script>
+</html>
